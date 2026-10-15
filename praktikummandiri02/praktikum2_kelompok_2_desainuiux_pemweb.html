@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form Pembelian iPhone</title>
+</head>
+<body>
+  <nav>
+    <a href="#">Home</a> |
+    <a href="#">Beli iPhone</a> |
+    <a href="#">Riwayat Pesanan</a> |
+    <a href="#">Kebijakan</a> |
+    <a href="#">Keluar</a>
+  </nav>
+  <hr>
+
+  <form action="praktikum2_kelompok_2_hasil.html" method="get">
+    <table>
+      <tr>
+        <td rowspan="10" valign="top">
+          <img src="images/iphone.jpg" alt="Foto iPhone" width="220" height="220"><br>
+          <input type="file" name="foto" accept="image/*">
+        </td>
+        <td align="right" nowrap><label for="judul">Nama HP :</label></td>
+        <td><input type="text" id="judul" name="judul" value="iPhone 15 - Rp13.999.000" size="30"></td>
+      </tr>
+      <tr>
+        <td align="right" valign="top" nowrap><label for="deskripsi">Deskripsi :</label></td>
+        <td><textarea id="deskripsi" name="deskripsi" rows="5" cols="30">Tahun : 2023
+Model : iPhone 15 128 GB
+Kondisi : Baru</textarea></td>
+      </tr>
+      <tr>
+        <td align="right" nowrap><label for="norek">No. Rekening :</label></td>
+        <td><input type="text" id="norek" name="norek" value="123-456-789-0" size="30"></td>
+      </tr>
+      <tr>
+        <td align="right" nowrap><label for="bank">Bank :</label></td>
+        <td>
+          <select id="bank" name="bank">
+            <option>BCA</option>
+            <option>BRI</option>
+            <option>Mandiri</option>
+            <option>BNI</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td align="right" nowrap><label for="pemilik">Nama Pemilik :</label></td>
+        <td><input type="text" id="pemilik" name="pemilik" placeholder="Nama lengkap" size="30"></td>
+      </tr>
+      <tr>
+        <td align="right" valign="top" nowrap><label for="jumlah">Jumlah Unit :</label></td>
+        <td>
+          <select id="jumlah" name="jumlah">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select><br>
+          <small>* Jika membeli untuk 3 orang, pilih 3 pada daftar pilihan</small>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input type="checkbox" id="kirim_hp" name="kirim_hp" checked>
+          <label for="kirim_hp">Kirim ke No. HP</label><br>
+          <input type="checkbox" id="kirim_email" name="kirim_email" checked>
+          <label for="kirim_email">Kirim ke Email</label>
+        </td>
+      </tr>
+      <tr>
+        <td align="right" nowrap><label for="hp">No. HP :</label></td>
+        <td><input type="text" id="hp" name="hp" value="081234567890, 081234567891" size="30"></td>
+      </tr>
+      <tr>
+        <td align="right" nowrap><label for="email">Email :</label></td>
+        <td><input type="text" id="email" name="email" value="mahasiswa@sttnf.ac.id, user@gmail.com" size="30"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" value="Buat Pesanan"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
